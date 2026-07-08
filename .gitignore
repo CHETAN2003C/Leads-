@@ -11,6 +11,8 @@ backend/uploads/media/
 backend/.env
 venv/
 .venv/
+.pyc
+db.sqlite3
 
 # IDEs & System
 .idea/
