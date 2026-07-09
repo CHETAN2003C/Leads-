@@ -4,6 +4,7 @@ from datetime import timedelta
 
 from django.core.management.base import BaseCommand
 from django.contrib.auth import get_user_model
+from django.contrib.auth.password_validation import validate_password
 from django.utils import timezone
 
 from leads.models import Activity, Lead, Prediction, Recommendation
@@ -40,6 +41,7 @@ class Command(BaseCommand):
         user.role = User.Role.SYSTEM_ADMINISTRATOR
         user.is_staff = True
         user.is_superuser = True
+        validate_password(options["password"], user=user)
         user.set_password(options["password"])
         user.save()
 

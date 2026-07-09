@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import os
 from urllib import request as urllib_request
+from urllib.parse import urlparse
 
 
 def generate_completion(prompt: str, fallback_payload: dict) -> dict:
@@ -10,6 +11,11 @@ def generate_completion(prompt: str, fallback_payload: dict) -> dict:
     api_key = os.getenv("LEADPULSE_LLM_API_KEY", "").strip()
 
     if not endpoint:
+        return fallback_payload
+
+    # Validate that scheme is http or https to prevent SSRF
+    parsed_url = urlparse(endpoint)
+    if parsed_url.scheme not in ("http", "https"):
         return fallback_payload
 
     payload = json.dumps({"prompt": prompt}).encode("utf-8")
