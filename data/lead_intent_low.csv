@@ -1,0 +1,101 @@
+external_id,first_name,last_name,email,company_name,job_title,industry,company_size,source,activity_type,activity_channel,activity_timestamp,activity_value,website_visits,email_opens,email_clicks,demo_attended,pricing_page_visits,content_downloads,prior_interaction_count,last_contact_at,intent_bucket,score
+low-001,Aarav,Sharma,aarav.sharma001@leadpulse.in,Redwood Health,Director of Sales,Healthcare,105,campaign,content_download,call,2026-07-09T09:15:00Z,0.5,2,2,1,0,1,2,2,2026-07-08T08:15:00Z,low,12
+low-002,Priya,Iyer,priya.iyer002@leadpulse.in,Vertex Ops,Revenue Operations Manager,Operations,110,referral,email_open,email,2026-07-09T10:30:00Z,1.0,3,3,2,0,0,0,3,2026-07-08T09:30:00Z,low,14
+low-003,Rohan,Gupta,rohan.gupta003@leadpulse.in,Orchid Retail,Head of Growth,Retail,115,website,content_download,linkedin,2026-07-09T11:45:00Z,1.5,1,4,0,0,1,1,4,2026-07-08T10:45:00Z,low,9
+low-004,Anika,Mehta,anika.mehta004@leadpulse.in,BluePeak Finance,Sales Lead,Finance,120,partner,email_open,call,2026-07-09T12:00:00Z,2.0,2,1,1,0,0,2,5,2026-07-08T11:00:00Z,low,18
+low-005,Kabir,Singh,kabir.singh005@leadpulse.in,Mosaic Labs,Founder,Technology,125,event,content_download,email,2026-07-09T13:15:00Z,2.5,3,2,2,0,1,0,1,2026-07-08T12:15:00Z,low,11
+low-006,Neha,Nair,neha.nair006@leadpulse.in,Northstar AI,VP Revenue,SaaS,130,website,email_open,email,2026-07-09T14:30:00Z,3.0,1,3,0,0,0,1,2,2026-07-08T13:30:00Z,low,16
+low-007,Vihaan,Patel,vihaan.patel007@leadpulse.in,Redwood Health,Director of Sales,Healthcare,135,campaign,content_download,call,2026-07-09T15:45:00Z,0.0,2,4,1,0,1,2,3,2026-07-08T14:45:00Z,low,8
+low-008,Ishita,Rao,ishita.rao008@leadpulse.in,Vertex Ops,Revenue Operations Manager,Operations,140,referral,email_open,email,2026-07-09T16:00:00Z,0.5,3,1,2,0,0,0,4,2026-07-08T15:00:00Z,low,13
+low-009,Aditya,Verma,aditya.verma009@leadpulse.in,Orchid Retail,Head of Growth,Retail,145,website,content_download,linkedin,2026-07-09T17:15:00Z,1.0,1,2,0,0,1,1,5,2026-07-08T16:15:00Z,low,10
+low-010,Sanya,Choudhary,sanya.choudhary010@leadpulse.in,BluePeak Finance,Sales Lead,Finance,150,partner,email_open,call,2026-07-09T18:30:00Z,1.5,2,3,1,0,0,2,1,2026-07-08T17:30:00Z,low,17
+low-011,Arjun,Khanna,arjun.khanna011@leadpulse.in,Mosaic Labs,Founder,Technology,155,event,content_download,email,2026-07-09T19:45:00Z,2.0,3,4,2,0,1,0,2,2026-07-08T18:45:00Z,low,14
+low-012,Meera,Joshi,meera.joshi012@leadpulse.in,Northstar AI,VP Revenue,SaaS,160,website,email_open,email,2026-07-09T08:00:00Z,2.5,1,1,0,0,0,1,3,2026-07-08T07:00:00Z,low,7
+low-013,Karan,Malhotra,karan.malhotra013@leadpulse.in,Redwood Health,Director of Sales,Healthcare,165,campaign,content_download,call,2026-07-09T09:15:00Z,3.0,2,2,1,0,1,2,4,2026-07-08T08:15:00Z,low,19
+low-014,Pooja,Bansal,pooja.bansal014@leadpulse.in,Vertex Ops,Revenue Operations Manager,Operations,170,referral,email_open,email,2026-07-09T10:30:00Z,0.0,3,3,2,0,0,0,5,2026-07-08T09:30:00Z,low,6
+low-015,Siddharth,Kulkarni,siddharth.kulkarni015@leadpulse.in,Orchid Retail,Head of Growth,Retail,175,website,content_download,linkedin,2026-07-09T11:45:00Z,0.5,1,4,0,0,1,1,1,2026-07-08T10:45:00Z,low,20
+low-016,Riya,Das,riya.das016@leadpulse.in,BluePeak Finance,Sales Lead,Finance,180,partner,email_open,call,2026-07-09T12:00:00Z,1.0,2,1,1,0,0,2,2,2026-07-08T11:00:00Z,low,5
+low-017,Nitin,Roy,nitin.roy017@leadpulse.in,Mosaic Labs,Founder,Technology,185,event,content_download,email,2026-07-09T13:15:00Z,1.5,3,2,2,0,1,0,3,2026-07-08T12:15:00Z,low,18
+low-018,Tanvi,Menon,tanvi.menon018@leadpulse.in,Northstar AI,VP Revenue,SaaS,190,website,email_open,email,2026-07-09T14:30:00Z,2.0,1,3,0,0,0,1,4,2026-07-08T13:30:00Z,low,9
+low-019,Harsh,Vyas,harsh.vyas019@leadpulse.in,Redwood Health,Director of Sales,Healthcare,195,campaign,content_download,call,2026-07-09T15:45:00Z,2.5,2,4,1,0,1,2,5,2026-07-08T14:45:00Z,low,15
+low-020,Kavya,Sethi,kavya.sethi020@leadpulse.in,Vertex Ops,Revenue Operations Manager,Operations,200,referral,email_open,email,2026-07-09T16:00:00Z,3.0,3,1,2,0,0,0,1,2026-07-08T15:00:00Z,low,12
+low-021,Aarav,Sharma,aarav.sharma021@leadpulse.in,Vertex Ops,Revenue Operations Manager,Operations,205,referral,email_open,email,2026-07-09T17:15:00Z,0.0,1,2,0,0,1,1,2,2026-07-08T16:15:00Z,low,12
+low-022,Priya,Iyer,priya.iyer022@leadpulse.in,Orchid Retail,Head of Growth,Retail,210,website,content_download,linkedin,2026-07-09T18:30:00Z,0.5,2,3,1,0,0,2,3,2026-07-08T17:30:00Z,low,14
+low-023,Rohan,Gupta,rohan.gupta023@leadpulse.in,BluePeak Finance,Sales Lead,Finance,215,partner,email_open,call,2026-07-09T19:45:00Z,1.0,3,4,2,0,1,0,4,2026-07-08T18:45:00Z,low,9
+low-024,Anika,Mehta,anika.mehta024@leadpulse.in,Mosaic Labs,Founder,Technology,220,event,content_download,email,2026-07-09T08:00:00Z,1.5,1,1,0,0,0,1,5,2026-07-08T07:00:00Z,low,18
+low-025,Kabir,Singh,kabir.singh025@leadpulse.in,Northstar AI,VP Revenue,SaaS,225,website,email_open,email,2026-07-09T09:15:00Z,2.0,2,2,1,0,1,2,1,2026-07-08T08:15:00Z,low,11
+low-026,Neha,Nair,neha.nair026@leadpulse.in,Redwood Health,Director of Sales,Healthcare,230,campaign,content_download,call,2026-07-09T10:30:00Z,2.5,3,3,2,0,0,0,2,2026-07-08T09:30:00Z,low,16
+low-027,Vihaan,Patel,vihaan.patel027@leadpulse.in,Vertex Ops,Revenue Operations Manager,Operations,235,referral,email_open,email,2026-07-09T11:45:00Z,3.0,1,4,0,0,1,1,3,2026-07-08T10:45:00Z,low,8
+low-028,Ishita,Rao,ishita.rao028@leadpulse.in,Orchid Retail,Head of Growth,Retail,240,website,content_download,linkedin,2026-07-09T12:00:00Z,0.0,2,1,1,0,0,2,4,2026-07-08T11:00:00Z,low,13
+low-029,Aditya,Verma,aditya.verma029@leadpulse.in,BluePeak Finance,Sales Lead,Finance,245,partner,email_open,call,2026-07-09T13:15:00Z,0.5,3,2,2,0,1,0,5,2026-07-08T12:15:00Z,low,10
+low-030,Sanya,Choudhary,sanya.choudhary030@leadpulse.in,Mosaic Labs,Founder,Technology,250,event,content_download,email,2026-07-09T14:30:00Z,1.0,1,3,0,0,0,1,1,2026-07-08T13:30:00Z,low,17
+low-031,Arjun,Khanna,arjun.khanna031@leadpulse.in,Northstar AI,VP Revenue,SaaS,255,website,email_open,email,2026-07-09T15:45:00Z,1.5,2,4,1,0,1,2,2,2026-07-08T14:45:00Z,low,14
+low-032,Meera,Joshi,meera.joshi032@leadpulse.in,Redwood Health,Director of Sales,Healthcare,260,campaign,content_download,call,2026-07-09T16:00:00Z,2.0,3,1,2,0,0,0,3,2026-07-08T15:00:00Z,low,7
+low-033,Karan,Malhotra,karan.malhotra033@leadpulse.in,Vertex Ops,Revenue Operations Manager,Operations,265,referral,email_open,email,2026-07-09T17:15:00Z,2.5,1,2,0,0,1,1,4,2026-07-08T16:15:00Z,low,19
+low-034,Pooja,Bansal,pooja.bansal034@leadpulse.in,Orchid Retail,Head of Growth,Retail,270,website,content_download,linkedin,2026-07-09T18:30:00Z,3.0,2,3,1,0,0,2,5,2026-07-08T17:30:00Z,low,6
+low-035,Siddharth,Kulkarni,siddharth.kulkarni035@leadpulse.in,BluePeak Finance,Sales Lead,Finance,275,partner,email_open,call,2026-07-09T19:45:00Z,0.0,3,4,2,0,1,0,1,2026-07-08T18:45:00Z,low,20
+low-036,Riya,Das,riya.das036@leadpulse.in,Mosaic Labs,Founder,Technology,280,event,content_download,email,2026-07-09T08:00:00Z,0.5,1,1,0,0,0,1,2,2026-07-08T07:00:00Z,low,5
+low-037,Nitin,Roy,nitin.roy037@leadpulse.in,Northstar AI,VP Revenue,SaaS,285,website,email_open,email,2026-07-09T09:15:00Z,1.0,2,2,1,0,1,2,3,2026-07-08T08:15:00Z,low,18
+low-038,Tanvi,Menon,tanvi.menon038@leadpulse.in,Redwood Health,Director of Sales,Healthcare,290,campaign,content_download,call,2026-07-09T10:30:00Z,1.5,3,3,2,0,0,0,4,2026-07-08T09:30:00Z,low,9
+low-039,Harsh,Vyas,harsh.vyas039@leadpulse.in,Vertex Ops,Revenue Operations Manager,Operations,295,referral,email_open,email,2026-07-09T11:45:00Z,2.0,1,4,0,0,1,1,5,2026-07-08T10:45:00Z,low,15
+low-040,Kavya,Sethi,kavya.sethi040@leadpulse.in,Orchid Retail,Head of Growth,Retail,300,website,content_download,linkedin,2026-07-09T12:00:00Z,2.5,2,1,1,0,0,2,1,2026-07-08T11:00:00Z,low,12
+low-041,Aarav,Sharma,aarav.sharma041@leadpulse.in,Orchid Retail,Head of Growth,Retail,305,website,content_download,linkedin,2026-07-09T13:15:00Z,3.0,3,2,2,0,1,0,2,2026-07-08T12:15:00Z,low,12
+low-042,Priya,Iyer,priya.iyer042@leadpulse.in,BluePeak Finance,Sales Lead,Finance,310,partner,email_open,call,2026-07-09T14:30:00Z,0.0,1,3,0,0,0,1,3,2026-07-08T13:30:00Z,low,14
+low-043,Rohan,Gupta,rohan.gupta043@leadpulse.in,Mosaic Labs,Founder,Technology,315,event,content_download,email,2026-07-09T15:45:00Z,0.5,2,4,1,0,1,2,4,2026-07-08T14:45:00Z,low,9
+low-044,Anika,Mehta,anika.mehta044@leadpulse.in,Northstar AI,VP Revenue,SaaS,320,website,email_open,email,2026-07-09T16:00:00Z,1.0,3,1,2,0,0,0,5,2026-07-08T15:00:00Z,low,18
+low-045,Kabir,Singh,kabir.singh045@leadpulse.in,Redwood Health,Director of Sales,Healthcare,325,campaign,content_download,call,2026-07-09T17:15:00Z,1.5,1,2,0,0,1,1,1,2026-07-08T16:15:00Z,low,11
+low-046,Neha,Nair,neha.nair046@leadpulse.in,Vertex Ops,Revenue Operations Manager,Operations,330,referral,email_open,email,2026-07-09T18:30:00Z,2.0,2,3,1,0,0,2,2,2026-07-08T17:30:00Z,low,16
+low-047,Vihaan,Patel,vihaan.patel047@leadpulse.in,Orchid Retail,Head of Growth,Retail,335,website,content_download,linkedin,2026-07-09T19:45:00Z,2.5,3,4,2,0,1,0,3,2026-07-08T18:45:00Z,low,8
+low-048,Ishita,Rao,ishita.rao048@leadpulse.in,BluePeak Finance,Sales Lead,Finance,340,partner,email_open,call,2026-07-09T08:00:00Z,3.0,1,1,0,0,0,1,4,2026-07-08T07:00:00Z,low,13
+low-049,Aditya,Verma,aditya.verma049@leadpulse.in,Mosaic Labs,Founder,Technology,345,event,content_download,email,2026-07-09T09:15:00Z,0.0,2,2,1,0,1,2,5,2026-07-08T08:15:00Z,low,10
+low-050,Sanya,Choudhary,sanya.choudhary050@leadpulse.in,Northstar AI,VP Revenue,SaaS,350,website,email_open,email,2026-07-09T10:30:00Z,0.5,3,3,2,0,0,0,1,2026-07-08T09:30:00Z,low,17
+low-051,Arjun,Khanna,arjun.khanna051@leadpulse.in,Redwood Health,Director of Sales,Healthcare,355,campaign,content_download,call,2026-07-09T11:45:00Z,1.0,1,4,0,0,1,1,2,2026-07-08T10:45:00Z,low,14
+low-052,Meera,Joshi,meera.joshi052@leadpulse.in,Vertex Ops,Revenue Operations Manager,Operations,360,referral,email_open,email,2026-07-09T12:00:00Z,1.5,2,1,1,0,0,2,3,2026-07-08T11:00:00Z,low,7
+low-053,Karan,Malhotra,karan.malhotra053@leadpulse.in,Orchid Retail,Head of Growth,Retail,365,website,content_download,linkedin,2026-07-09T13:15:00Z,2.0,3,2,2,0,1,0,4,2026-07-08T12:15:00Z,low,19
+low-054,Pooja,Bansal,pooja.bansal054@leadpulse.in,BluePeak Finance,Sales Lead,Finance,370,partner,email_open,call,2026-07-09T14:30:00Z,2.5,1,3,0,0,0,1,5,2026-07-08T13:30:00Z,low,6
+low-055,Siddharth,Kulkarni,siddharth.kulkarni055@leadpulse.in,Mosaic Labs,Founder,Technology,375,event,content_download,email,2026-07-09T15:45:00Z,3.0,2,4,1,0,1,2,1,2026-07-08T14:45:00Z,low,20
+low-056,Riya,Das,riya.das056@leadpulse.in,Northstar AI,VP Revenue,SaaS,380,website,email_open,email,2026-07-09T16:00:00Z,0.0,3,1,2,0,0,0,2,2026-07-08T15:00:00Z,low,5
+low-057,Nitin,Roy,nitin.roy057@leadpulse.in,Redwood Health,Director of Sales,Healthcare,385,campaign,content_download,call,2026-07-09T17:15:00Z,0.5,1,2,0,0,1,1,3,2026-07-08T16:15:00Z,low,18
+low-058,Tanvi,Menon,tanvi.menon058@leadpulse.in,Vertex Ops,Revenue Operations Manager,Operations,390,referral,email_open,email,2026-07-09T18:30:00Z,1.0,2,3,1,0,0,2,4,2026-07-08T17:30:00Z,low,9
+low-059,Harsh,Vyas,harsh.vyas059@leadpulse.in,Orchid Retail,Head of Growth,Retail,395,website,content_download,linkedin,2026-07-09T19:45:00Z,1.5,3,4,2,0,1,0,5,2026-07-08T18:45:00Z,low,15
+low-060,Kavya,Sethi,kavya.sethi060@leadpulse.in,BluePeak Finance,Sales Lead,Finance,400,partner,email_open,call,2026-07-09T08:00:00Z,2.0,1,1,0,0,0,1,1,2026-07-08T07:00:00Z,low,12
+low-061,Aarav,Sharma,aarav.sharma061@leadpulse.in,BluePeak Finance,Sales Lead,Finance,405,partner,email_open,call,2026-07-09T09:15:00Z,2.5,2,2,1,0,1,2,2,2026-07-08T08:15:00Z,low,12
+low-062,Priya,Iyer,priya.iyer062@leadpulse.in,Mosaic Labs,Founder,Technology,410,event,content_download,email,2026-07-09T10:30:00Z,3.0,3,3,2,0,0,0,3,2026-07-08T09:30:00Z,low,14
+low-063,Rohan,Gupta,rohan.gupta063@leadpulse.in,Northstar AI,VP Revenue,SaaS,415,website,email_open,email,2026-07-09T11:45:00Z,0.0,1,4,0,0,1,1,4,2026-07-08T10:45:00Z,low,9
+low-064,Anika,Mehta,anika.mehta064@leadpulse.in,Redwood Health,Director of Sales,Healthcare,420,campaign,content_download,call,2026-07-09T12:00:00Z,0.5,2,1,1,0,0,2,5,2026-07-08T11:00:00Z,low,18
+low-065,Kabir,Singh,kabir.singh065@leadpulse.in,Vertex Ops,Revenue Operations Manager,Operations,425,referral,email_open,email,2026-07-09T13:15:00Z,1.0,3,2,2,0,1,0,1,2026-07-08T12:15:00Z,low,11
+low-066,Neha,Nair,neha.nair066@leadpulse.in,Orchid Retail,Head of Growth,Retail,430,website,content_download,linkedin,2026-07-09T14:30:00Z,1.5,1,3,0,0,0,1,2,2026-07-08T13:30:00Z,low,16
+low-067,Vihaan,Patel,vihaan.patel067@leadpulse.in,BluePeak Finance,Sales Lead,Finance,435,partner,email_open,call,2026-07-09T15:45:00Z,2.0,2,4,1,0,1,2,3,2026-07-08T14:45:00Z,low,8
+low-068,Ishita,Rao,ishita.rao068@leadpulse.in,Mosaic Labs,Founder,Technology,440,event,content_download,email,2026-07-09T16:00:00Z,2.5,3,1,2,0,0,0,4,2026-07-08T15:00:00Z,low,13
+low-069,Aditya,Verma,aditya.verma069@leadpulse.in,Northstar AI,VP Revenue,SaaS,445,website,email_open,email,2026-07-09T17:15:00Z,3.0,1,2,0,0,1,1,5,2026-07-08T16:15:00Z,low,10
+low-070,Sanya,Choudhary,sanya.choudhary070@leadpulse.in,Redwood Health,Director of Sales,Healthcare,450,campaign,content_download,call,2026-07-09T18:30:00Z,0.0,2,3,1,0,0,2,1,2026-07-08T17:30:00Z,low,17
+low-071,Arjun,Khanna,arjun.khanna071@leadpulse.in,Vertex Ops,Revenue Operations Manager,Operations,455,referral,email_open,email,2026-07-09T19:45:00Z,0.5,3,4,2,0,1,0,2,2026-07-08T18:45:00Z,low,14
+low-072,Meera,Joshi,meera.joshi072@leadpulse.in,Orchid Retail,Head of Growth,Retail,460,website,content_download,linkedin,2026-07-09T08:00:00Z,1.0,1,1,0,0,0,1,3,2026-07-08T07:00:00Z,low,7
+low-073,Karan,Malhotra,karan.malhotra073@leadpulse.in,BluePeak Finance,Sales Lead,Finance,465,partner,email_open,call,2026-07-09T09:15:00Z,1.5,2,2,1,0,1,2,4,2026-07-08T08:15:00Z,low,19
+low-074,Pooja,Bansal,pooja.bansal074@leadpulse.in,Mosaic Labs,Founder,Technology,470,event,content_download,email,2026-07-09T10:30:00Z,2.0,3,3,2,0,0,0,5,2026-07-08T09:30:00Z,low,6
+low-075,Siddharth,Kulkarni,siddharth.kulkarni075@leadpulse.in,Northstar AI,VP Revenue,SaaS,475,website,email_open,email,2026-07-09T11:45:00Z,2.5,1,4,0,0,1,1,1,2026-07-08T10:45:00Z,low,20
+low-076,Riya,Das,riya.das076@leadpulse.in,Redwood Health,Director of Sales,Healthcare,480,campaign,content_download,call,2026-07-09T12:00:00Z,3.0,2,1,1,0,0,2,2,2026-07-08T11:00:00Z,low,5
+low-077,Nitin,Roy,nitin.roy077@leadpulse.in,Vertex Ops,Revenue Operations Manager,Operations,485,referral,email_open,email,2026-07-09T13:15:00Z,0.0,3,2,2,0,1,0,3,2026-07-08T12:15:00Z,low,18
+low-078,Tanvi,Menon,tanvi.menon078@leadpulse.in,Orchid Retail,Head of Growth,Retail,490,website,content_download,linkedin,2026-07-09T14:30:00Z,0.5,1,3,0,0,0,1,4,2026-07-08T13:30:00Z,low,9
+low-079,Harsh,Vyas,harsh.vyas079@leadpulse.in,BluePeak Finance,Sales Lead,Finance,495,partner,email_open,call,2026-07-09T15:45:00Z,1.0,2,4,1,0,1,2,5,2026-07-08T14:45:00Z,low,15
+low-080,Kavya,Sethi,kavya.sethi080@leadpulse.in,Mosaic Labs,Founder,Technology,500,event,content_download,email,2026-07-09T16:00:00Z,1.5,3,1,2,0,0,0,1,2026-07-08T15:00:00Z,low,12
+low-081,Aarav,Sharma,aarav.sharma081@leadpulse.in,Mosaic Labs,Founder,Technology,505,event,content_download,email,2026-07-09T17:15:00Z,2.0,1,2,0,0,1,1,2,2026-07-08T16:15:00Z,low,12
+low-082,Priya,Iyer,priya.iyer082@leadpulse.in,Northstar AI,VP Revenue,SaaS,510,website,email_open,email,2026-07-09T18:30:00Z,2.5,2,3,1,0,0,2,3,2026-07-08T17:30:00Z,low,14
+low-083,Rohan,Gupta,rohan.gupta083@leadpulse.in,Redwood Health,Director of Sales,Healthcare,515,campaign,content_download,call,2026-07-09T19:45:00Z,3.0,3,4,2,0,1,0,4,2026-07-08T18:45:00Z,low,9
+low-084,Anika,Mehta,anika.mehta084@leadpulse.in,Vertex Ops,Revenue Operations Manager,Operations,520,referral,email_open,email,2026-07-09T08:00:00Z,0.0,1,1,0,0,0,1,5,2026-07-08T07:00:00Z,low,18
+low-085,Kabir,Singh,kabir.singh085@leadpulse.in,Orchid Retail,Head of Growth,Retail,525,website,content_download,linkedin,2026-07-09T09:15:00Z,0.5,2,2,1,0,1,2,1,2026-07-08T08:15:00Z,low,11
+low-086,Neha,Nair,neha.nair086@leadpulse.in,BluePeak Finance,Sales Lead,Finance,530,partner,email_open,call,2026-07-09T10:30:00Z,1.0,3,3,2,0,0,0,2,2026-07-08T09:30:00Z,low,16
+low-087,Vihaan,Patel,vihaan.patel087@leadpulse.in,Mosaic Labs,Founder,Technology,535,event,content_download,email,2026-07-09T11:45:00Z,1.5,1,4,0,0,1,1,3,2026-07-08T10:45:00Z,low,8
+low-088,Ishita,Rao,ishita.rao088@leadpulse.in,Northstar AI,VP Revenue,SaaS,540,website,email_open,email,2026-07-09T12:00:00Z,2.0,2,1,1,0,0,2,4,2026-07-08T11:00:00Z,low,13
+low-089,Aditya,Verma,aditya.verma089@leadpulse.in,Redwood Health,Director of Sales,Healthcare,545,campaign,content_download,call,2026-07-09T13:15:00Z,2.5,3,2,2,0,1,0,5,2026-07-08T12:15:00Z,low,10
+low-090,Sanya,Choudhary,sanya.choudhary090@leadpulse.in,Vertex Ops,Revenue Operations Manager,Operations,550,referral,email_open,email,2026-07-09T14:30:00Z,3.0,1,3,0,0,0,1,1,2026-07-08T13:30:00Z,low,17
+low-091,Arjun,Khanna,arjun.khanna091@leadpulse.in,Orchid Retail,Head of Growth,Retail,555,website,content_download,linkedin,2026-07-09T15:45:00Z,0.0,2,4,1,0,1,2,2,2026-07-08T14:45:00Z,low,14
+low-092,Meera,Joshi,meera.joshi092@leadpulse.in,BluePeak Finance,Sales Lead,Finance,560,partner,email_open,call,2026-07-09T16:00:00Z,0.5,3,1,2,0,0,0,3,2026-07-08T15:00:00Z,low,7
+low-093,Karan,Malhotra,karan.malhotra093@leadpulse.in,Mosaic Labs,Founder,Technology,565,event,content_download,email,2026-07-09T17:15:00Z,1.0,1,2,0,0,1,1,4,2026-07-08T16:15:00Z,low,19
+low-094,Pooja,Bansal,pooja.bansal094@leadpulse.in,Northstar AI,VP Revenue,SaaS,570,website,email_open,email,2026-07-09T18:30:00Z,1.5,2,3,1,0,0,2,5,2026-07-08T17:30:00Z,low,6
+low-095,Siddharth,Kulkarni,siddharth.kulkarni095@leadpulse.in,Redwood Health,Director of Sales,Healthcare,575,campaign,content_download,call,2026-07-09T19:45:00Z,2.0,3,4,2,0,1,0,1,2026-07-08T18:45:00Z,low,20
+low-096,Riya,Das,riya.das096@leadpulse.in,Vertex Ops,Revenue Operations Manager,Operations,580,referral,email_open,email,2026-07-09T08:00:00Z,2.5,1,1,0,0,0,1,2,2026-07-08T07:00:00Z,low,5
+low-097,Nitin,Roy,nitin.roy097@leadpulse.in,Orchid Retail,Head of Growth,Retail,585,website,content_download,linkedin,2026-07-09T09:15:00Z,3.0,2,2,1,0,1,2,3,2026-07-08T08:15:00Z,low,18
+low-098,Tanvi,Menon,tanvi.menon098@leadpulse.in,BluePeak Finance,Sales Lead,Finance,590,partner,email_open,call,2026-07-09T10:30:00Z,0.0,3,3,2,0,0,0,4,2026-07-08T09:30:00Z,low,9
+low-099,Harsh,Vyas,harsh.vyas099@leadpulse.in,Mosaic Labs,Founder,Technology,595,event,content_download,email,2026-07-09T11:45:00Z,0.5,1,4,0,0,1,1,5,2026-07-08T10:45:00Z,low,15
+low-100,Kavya,Sethi,kavya.sethi100@leadpulse.in,Northstar AI,VP Revenue,SaaS,600,website,email_open,email,2026-07-09T12:00:00Z,1.0,2,1,1,0,0,2,1,2026-07-08T11:00:00Z,low,12
