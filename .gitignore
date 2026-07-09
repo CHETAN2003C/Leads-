@@ -20,3 +20,6 @@ db.sqlite3
 .DS_Store
 *.log
 .gemini/
+
+plan.md
+vuln_results1.json
