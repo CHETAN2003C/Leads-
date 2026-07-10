@@ -16,6 +16,9 @@ class User(AbstractUser):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     email = models.EmailField(unique=True)
     role = models.CharField(max_length=64, choices=Role.choices, default=Role.SALES_REPRESENTATIVE)
+    failed_login_attempts = models.IntegerField(default=0)
+    locked_until = models.DateTimeField(null=True, blank=True)
+    is_locked_by_admin = models.BooleanField(default=False)
 
     def __str__(self) -> str:
         return self.get_username()

@@ -6,11 +6,11 @@ This document lists all seeded demo users, their credentials, roles, and accessi
 
 | Username | Password | Role | Accessible Features | Restricted Features |
 |---|---|---|---|---|
-| `admin` | `LeadPulse123!` | System Administrator | Full access: Dashboard, CSV Upload, Top Opportunities, AI Copilot, User Management | None |
-| `sys_admin` | `LeadPulse123!` | System Administrator | Full access: Dashboard, CSV Upload, Top Opportunities, AI Copilot, User Management | None |
-| `sales_rep` | `LeadPulse123!` | Sales Representative | Dashboard, Top Opportunities, AI Copilot | CSV Upload, User Management |
-| `sales_mgr` | `LeadPulse123!` | Sales Manager | Dashboard, Top Opportunities, AI Copilot | CSV Upload, User Management |
-| `marketing_exec` | `LeadPulse123!` | Marketing Executive | CSV Upload | Dashboard, Top Opportunities, AI Copilot, User Management |
+| `admin` | `LeadPulse123` | System Administrator | Full access: Dashboard, CSV Upload, Top Opportunities, AI Copilot, User Management | None |
+| `sys_admin` | `LeadPulse123` | System Administrator | Full access: Dashboard, CSV Upload, Top Opportunities, AI Copilot, User Management | None |
+| `sales_rep` | `LeadPulse123` | Sales Representative | Dashboard, Top Opportunities, AI Copilot | CSV Upload, User Management |
+| `sales_mgr` | `LeadPulse123` | Sales Manager | Dashboard, Top Opportunities, AI Copilot | CSV Upload, User Management |
+| `marketing_exec` | `LeadPulse123` | Marketing Executive | CSV Upload | Dashboard, Top Opportunities, AI Copilot, User Management |
 
 ---
 

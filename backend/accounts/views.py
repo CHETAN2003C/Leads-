@@ -1,6 +1,8 @@
 from django.contrib.auth import authenticate, login, logout, get_user_model
 from django.contrib.auth.password_validation import validate_password
 from django.core.exceptions import ValidationError
+from django.utils import timezone
+import re
 from django.views.decorators.csrf import csrf_protect, ensure_csrf_cookie
 from django.utils.decorators import method_decorator
 from rest_framework import status, viewsets
@@ -33,9 +35,42 @@ class LoginView(APIView):
     def post(self, request):
         username = request.data.get("username", "")
         password = request.data.get("password", "")
+
+        if not re.match(r"^[a-zA-Z0-9_.]+$", username) or not re.match(r"^[a-zA-Z0-9_.]+$", password):
+            return Response({"detail": "Invalid credentials."}, status=status.HTTP_401_UNAUTHORIZED)
+
+        User = get_user_model()
+        try:
+            target_user = User.objects.get(username=username)
+        except User.DoesNotExist:
+            target_user = None
+
+        if target_user:
+            if target_user.is_locked_by_admin:
+                return Response({"detail": "Account locked by administrator."}, status=status.HTTP_403_FORBIDDEN)
+            if target_user.locked_until and target_user.locked_until > timezone.now():
+                return Response({"detail": "Account temporarily locked. Try again later."}, status=status.HTTP_403_FORBIDDEN)
+
         user = authenticate(request, username=username, password=password)
         if user is None:
+            if target_user:
+                target_user.failed_login_attempts += 1
+                if target_user.failed_login_attempts >= 5:
+                    target_user.is_locked_by_admin = True
+                    target_user.save()
+                    return Response({"detail": "Account locked by administrator."}, status=status.HTTP_403_FORBIDDEN)
+                elif target_user.failed_login_attempts >= 3:
+                    target_user.locked_until = timezone.now() + timezone.timedelta(minutes=1)
+                    target_user.save()
+                    return Response({"detail": "Account temporarily locked. Try again later."}, status=status.HTTP_403_FORBIDDEN)
+                else:
+                    target_user.save()
             return Response({"detail": "Invalid credentials."}, status=status.HTTP_401_UNAUTHORIZED)
+
+        user.failed_login_attempts = 0
+        user.locked_until = None
+        user.save()
+
         login(request, user)
         return Response(UserSerializer(user).data)
 
@@ -58,6 +93,12 @@ class RegisterView(APIView):
 
         if not username or not email or not password or not role:
             return Response({"detail": "Username, email, password, and role are required."}, status=status.HTTP_400_BAD_REQUEST)
+
+        if not re.match(r"^[a-zA-Z0-9_.]+$", username):
+            return Response({"detail": "Username can only contain alphanumeric characters, underscores, and periods."}, status=status.HTTP_400_BAD_REQUEST)
+
+        if not re.match(r"^[a-zA-Z0-9_.]+$", password):
+            return Response({"detail": "Password can only contain alphanumeric characters, underscores, and periods."}, status=status.HTTP_400_BAD_REQUEST)
 
         User = get_user_model()
         if User.objects.filter(username=username).exists():
@@ -92,3 +133,10 @@ class AdminUserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all().order_by("-date_joined")
     serializer_class = AdminUserSerializer
     permission_classes = [IsSystemAdministrator]
+
+    def perform_update(self, serializer):
+        is_locked = serializer.validated_data.get("is_locked_by_admin", None)
+        if is_locked is False:
+            serializer.save(failed_login_attempts=0, locked_until=None)
+        else:
+            serializer.save()

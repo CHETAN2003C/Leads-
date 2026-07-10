@@ -239,6 +239,16 @@ function App() {
     }
   }
 
+  async function handleUserUnlock(userId) {
+    try {
+      setUserMgmtError('')
+      const updated = await updateUser(userId, { is_locked_by_admin: false })
+      setUsersList((curr) => curr.map((u) => (u.id === userId ? updated : u)))
+    } catch (error) {
+      setUserMgmtError(error.message || 'Failed to unlock user.')
+    }
+  }
+
   async function handleLogout() {
     try {
       await logout()
@@ -972,19 +982,43 @@ function App() {
                             </select>
                           </td>
                           <td>
-                            <span className={`intent intent-${targetUser.is_active ? 'high' : 'low'}`}>
-                              {targetUser.is_active ? 'Verified' : 'Pending'}
-                            </span>
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                              <span className={`intent intent-${targetUser.is_active ? 'high' : 'low'}`}>
+                                {targetUser.is_active ? 'Verified' : 'Pending'}
+                              </span>
+                              {targetUser.is_locked_by_admin && (
+                                <span className="intent intent-low" style={{ background: '#FEE2E2', color: '#EF4444', border: '1px solid #FCA5A5' }}>
+                                  Locked (Admin)
+                                </span>
+                              )}
+                              {!targetUser.is_locked_by_admin && targetUser.locked_until && new Date(targetUser.locked_until) > new Date() && (
+                                <span className="intent intent-medium" style={{ background: '#FEF3C7', color: '#D97706', border: '1px solid #FCD34D' }}>
+                                  Locked (Temp)
+                                </span>
+                              )}
+                            </div>
                           </td>
                           <td>
-                            <button
-                              className="primary-button"
-                              type="button"
-                              onClick={() => handleUserVerifyToggle(targetUser)}
-                              style={{ height: '28px', padding: '0 10px', fontSize: '12px' }}
-                            >
-                              {targetUser.is_active ? 'Unverify' : 'Verify & Activate'}
-                            </button>
+                            <div style={{ display: 'flex', gap: '8px' }}>
+                              <button
+                                className="primary-button"
+                                type="button"
+                                onClick={() => handleUserVerifyToggle(targetUser)}
+                                style={{ height: '28px', padding: '0 10px', fontSize: '12px' }}
+                              >
+                                {targetUser.is_active ? 'Unverify' : 'Verify & Activate'}
+                              </button>
+                              {(targetUser.is_locked_by_admin || (targetUser.locked_until && new Date(targetUser.locked_until) > new Date())) && (
+                                <button
+                                  className="primary-button"
+                                  type="button"
+                                  onClick={() => handleUserUnlock(targetUser.id)}
+                                  style={{ height: '28px', padding: '0 10px', fontSize: '12px', background: '#EF4444', borderColor: '#EF4444', color: 'white' }}
+                                >
+                                  Unlock
+                                </button>
+                              )}
+                            </div>
                           </td>
                         </tr>
                       )) : (
