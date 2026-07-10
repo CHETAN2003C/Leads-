@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import json
 import os
+import socket
+from ipaddress import ip_address
 from urllib import request as urllib_request
 from urllib.parse import urlparse
 
@@ -13,9 +15,20 @@ def generate_completion(prompt: str, fallback_payload: dict) -> dict:
     if not endpoint:
         return fallback_payload
 
-    # Validate that scheme is http or https to prevent SSRF
+    # Validate that scheme is http or https and block private IPs to prevent SSRF
     parsed_url = urlparse(endpoint)
     if parsed_url.scheme not in ("http", "https"):
+        return fallback_payload
+
+    try:
+        hostname = parsed_url.hostname
+        if not hostname:
+            return fallback_payload
+        resolved_ip = socket.gethostbyname(hostname)
+        ip_obj = ip_address(resolved_ip)
+        if ip_obj.is_loopback or ip_obj.is_private or ip_obj.is_link_local or ip_obj.is_multicast:
+            return fallback_payload
+    except Exception:
         return fallback_payload
 
     payload = json.dumps({"prompt": prompt}).encode("utf-8")
