@@ -31,3 +31,9 @@ class IsMarketingOrAdmin(HasRole):
         "marketing_executive",
         "system_administrator",
     }
+
+
+class IsSystemAdministrator(HasRole):
+    allowed_roles = {
+        "system_administrator",
+    }

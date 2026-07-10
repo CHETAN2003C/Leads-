@@ -1,12 +1,15 @@
-from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth import authenticate, login, logout, get_user_model
+from django.contrib.auth.password_validation import validate_password
+from django.core.exceptions import ValidationError
 from django.views.decorators.csrf import csrf_protect, ensure_csrf_cookie
 from django.utils.decorators import method_decorator
-from rest_framework import status
+from rest_framework import status, viewsets
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from .serializers import UserSerializer
+from core.permissions import IsSystemAdministrator
+from .serializers import UserSerializer, AdminUserSerializer
 
 
 class MeView(APIView):
@@ -42,3 +45,50 @@ class LogoutView(APIView):
     def post(self, request):
         logout(request)
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+class RegisterView(APIView):
+    permission_classes = [AllowAny]
+
+    def post(self, request):
+        username = request.data.get("username", "").strip()
+        email = request.data.get("email", "").strip()
+        password = request.data.get("password", "")
+        role = request.data.get("role", "").strip()
+
+        if not username or not email or not password or not role:
+            return Response({"detail": "Username, email, password, and role are required."}, status=status.HTTP_400_BAD_REQUEST)
+
+        User = get_user_model()
+        if User.objects.filter(username=username).exists():
+            return Response({"detail": "Username already exists."}, status=status.HTTP_400_BAD_REQUEST)
+
+        if User.objects.filter(email=email).exists():
+            return Response({"detail": "Email already exists."}, status=status.HTTP_400_BAD_REQUEST)
+
+        if role not in {choice[0] for choice in User.Role.choices}:
+            return Response({"detail": "Invalid role specified."}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            temp_user = User(username=username, email=email)
+            validate_password(password, user=temp_user)
+        except ValidationError as e:
+            return Response({"detail": e.messages[0]}, status=status.HTTP_400_BAD_REQUEST)
+
+        user = User.objects.create(
+            username=username,
+            email=email,
+            role=role,
+            is_active=False,  # Needs admin verification/activation
+        )
+        user.set_password(password)
+        user.save()
+
+        return Response(UserSerializer(user).data, status=status.HTTP_201_CREATED)
+
+
+class AdminUserViewSet(viewsets.ModelViewSet):
+    User = get_user_model()
+    queryset = User.objects.all().order_by("-date_joined")
+    serializer_class = AdminUserSerializer
+    permission_classes = [IsSystemAdministrator]

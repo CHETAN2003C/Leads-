@@ -113,3 +113,21 @@ export function uploadCsv(file) {
     body: formData,
   })
 }
+
+export function register(username, email, password, role) {
+  return request('/auth/register/', {
+    method: 'POST',
+    body: JSON.stringify({ username, email, password, role }),
+  })
+}
+
+export function listUsers() {
+  return request('/auth/users/')
+}
+
+export function updateUser(userId, data) {
+  return request(`/auth/users/${userId}/`, {
+    method: 'PATCH',
+    body: JSON.stringify(data),
+  })
+}
