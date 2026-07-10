@@ -88,7 +88,7 @@ class RegisterView(APIView):
     def post(self, request):
         username = request.data.get("username", "").strip()
         email = request.data.get("email", "").strip()
-        password = request.data.get("password", "")
+        password = request.data.get("password", None)
         role = request.data.get("role", "").strip()
 
         if not username or not email or not password or not role:
