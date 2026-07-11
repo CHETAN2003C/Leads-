@@ -13,6 +13,10 @@ venv/
 .venv/
 .pyc
 db.sqlite3
+__pycache__/
+_pycache_/
+.bin/
+__pycache__
 
 # IDEs & System
 .idea/
