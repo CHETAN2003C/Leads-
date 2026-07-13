@@ -1,4 +1,4 @@
-const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api'
+const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000/api'
 
 function getCookie(name) {
   return document.cookie
@@ -10,13 +10,14 @@ function getCookie(name) {
 async function request(path, options = {}) {
   const { body, headers = {}, method = 'GET', ...rest } = options
   const isFormData = typeof FormData !== 'undefined' && body instanceof FormData
+  const csrfToken = getCookie('csrftoken') || ''
 
   const response = await fetch(`${API_BASE}${path}`, {
     method,
     credentials: 'include',
     headers: {
       ...(isFormData ? {} : { 'Content-Type': 'application/json' }),
-      ...(method !== 'GET' && method !== 'HEAD' ? { 'X-CSRFToken': getCookie('csrftoken') || '' } : {}),
+      ...(method !== 'GET' && method !== 'HEAD' ? { 'X-CSRFToken': csrfToken } : {}),
       ...headers,
     },
     body,
@@ -40,7 +41,14 @@ async function request(path, options = {}) {
 }
 
 export async function bootstrapSession() {
-  return request('/auth/csrf/')
+  try {
+    return await request('/auth/csrf/')
+  } catch (error) {
+    if (error.status === 403 || error.status === 401) {
+      return null
+    }
+    throw error
+  }
 }
 
 export async function getCurrentUser() {

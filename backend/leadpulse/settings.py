@@ -103,9 +103,11 @@ CSRF_COOKIE_HTTPONLY = False
 CSRF_COOKIE_SAMESITE = "Strict"
 CSRF_COOKIE_SECURE = not DEBUG
 
-CORS_ALLOWED_ORIGINS = [origin.strip() for origin in os.getenv("CORS_ALLOWED_ORIGINS", "http://localhost:5173").split(",") if origin.strip()]
+default_origins = "http://localhost:5173,http://127.0.0.1:5173"
+CORS_ALLOWED_ORIGINS = [origin.strip() for origin in os.getenv("CORS_ALLOWED_ORIGINS", default_origins).split(",") if origin.strip()]
 CORS_ALLOW_CREDENTIALS = True
-CSRF_TRUSTED_ORIGINS = [origin.strip() for origin in os.getenv("CSRF_TRUSTED_ORIGINS", "http://localhost:5173").split(",") if origin.strip()]
+CORS_ALLOWED_ORIGIN_REGEXES = [r"^http://localhost(:\d+)?$", r"^http://127\.0\.0\.1(:\d+)?$"]
+CSRF_TRUSTED_ORIGINS = [origin.strip() for origin in os.getenv("CSRF_TRUSTED_ORIGINS", default_origins).split(",") if origin.strip()]
 
 SECURE_BROWSER_XSS_FILTER = True
 SECURE_CONTENT_TYPE_NOSNIFF = True

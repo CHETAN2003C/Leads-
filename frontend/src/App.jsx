@@ -180,6 +180,7 @@ function App() {
     setAuthError('')
 
     try {
+      await bootstrapSession()
       const nextUser = await login(loginForm.username, loginForm.password)
       setUser(nextUser)
       await loadWorkspace(nextUser)

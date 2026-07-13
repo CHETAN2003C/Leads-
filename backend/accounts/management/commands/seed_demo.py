@@ -18,7 +18,7 @@ class Command(BaseCommand):
     def add_arguments(self, parser):
         parser.add_argument("--username", default="admin")
         parser.add_argument("--email", default="admin@leadpulse.local")
-        parser.add_argument("--password", default="LeadPulse123!")
+        parser.add_argument("--password", default="BlueRiver42")
         parser.add_argument("--first-name", default="System")
         parser.add_argument("--last-name", default="Administrator")
 
