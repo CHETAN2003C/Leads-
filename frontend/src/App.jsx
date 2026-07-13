@@ -255,6 +255,8 @@ function App() {
       await logout()
     } finally {
       setUser(null)
+      setLoginForm({ username: '', password: '' })
+      setAuthError('')
       setSummary({
         total_leads: 0,
         high_intent_leads: 0,
